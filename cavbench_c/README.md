@@ -3,29 +3,10 @@ This is a generic and extensible benchmark to compare different protein cavity d
 # How to run?
 In the shell command line, just type:
 
-<code>$ cavbench</code>
+<code>$ ./cavbench_c.sh</code>
  
-But, before that, please make sure that the file CavBench.sh has the due permissions 'x' to execute. To check this out, type the following in the command line:
-
-<code>$ ls -la</code> 
-
-to see the execution permissions. 
+But, before that, please make sure that the file cavbench_c.sh has the due permissions 'x' to execute. To check this out, type the following in the command line:
 
 If necessary to add execution permissions, please type:
 
 <code>$ chmod +x cavbench.sh</code> 
-
-# Contributors
-Sérgio Dias : sergioduartedias@sapo.pt
-
-Francisco fernandes: francisco.fernandes@ist.utl.pt 
-
-Tiago Simões : tiagomiguelcs@gmail.com
-
-Ana Mafalda Martins: a.mafalda.martins@gmail.com
-
-Alfredo Ferreira: alfredo.ferreira@ist.utl.pt 
-
-Joaquim Jorge: jaj@inesc.pt 
-
-Abel Gomes: agomes@di.ubi.pt
