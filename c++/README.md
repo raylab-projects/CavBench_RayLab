@@ -9,4 +9,4 @@ But, before that, please make sure that the file cavbench_c.sh has the due permi
 
 If necessary to add execution permissions, please type:
 
-<code>$ chmod +x cavbench.sh</code> 
+<code>$ chmod +x cavbench_c.sh</code> 
