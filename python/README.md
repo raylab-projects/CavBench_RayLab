@@ -3,10 +3,10 @@ This is a generic and extensible benchmark to compare different protein cavity d
 # How to run?
 In the shell command line, just type:
 
-<code>$ ./cavbench_c.sh</code>
+<code>$ ./cavbench_p.sh</code>
  
-But, before that, please make sure that the file cavbench_c.sh has the due permissions 'x' to execute. To check this out, type the following in the command line:
+But, before that, please make sure that the file cavbench_p.sh has the due permissions 'x' to execute. To check this out, type the following in the command line:
 
 If necessary to add execution permissions, please type:
 
-<code>$ chmod +x cavbench.sh</code> 
+<code>$ chmod +x cavbench_p.sh</code> 
