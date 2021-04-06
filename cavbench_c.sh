@@ -30,6 +30,9 @@
 # we assume you are in CavBench's root folder
 mypath="$PWD"
 
+g++ $mypath/src/dummyatompairs.cpp -o $mypath/bin/dummyatompairs.exe -Ofast -lm -march=native 
+g++ $mypath/src/overlappingmatrix.cpp -o $mypath/bin/overlapping_matrix.exe -Ofast -lm -march=native 
+g++ $mypath/src/tp_fp_fn.cpp -o $mypath/bin/tp_fp_fn.exe -Ofast -lm -march=native 
 
 # read in the names of protein cavity detection methods in the CavBench dataset
 methods=( `cat "$mypath/txt/methods.txt" `)
