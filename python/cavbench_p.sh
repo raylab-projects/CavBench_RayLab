@@ -104,7 +104,7 @@ do
         	# called dummyatompairs.exe whose source code is also in the folder /bin
         #./binn/dummyatompairs.exe "$mypath"/datasets/ground_thruth_csv/"$p".csv "$mypath"/datasets/"$m"_csv/"$p".csv >> dummyatompairs_temp_4.txt
         # > dummyatompairs_temp.txt
-	python3 binn/dummyatoms.py "$mypath"/datasets/ground_thruth_csv/"$p".csv "$mypath"/datasets/"$m"_csv/"$p".csv  > dummyatompairs_temp.txt
+	python3 bin/dummyatoms.py "$mypath"/datasets/ground_thruth_csv/"$p".csv "$mypath"/datasets/"$m"_csv/"$p".csv  > dummyatompairs_temp.txt
         	# Remove last line (blank line) of the file
 
         sed '$d' dummyatompairs_temp.txt > dummyatompairs.txt
@@ -117,7 +117,7 @@ do
         	# called overlappingmatrix.exe whose source code is also in the folder /bin
 		# >> $mypath/temp/overlappingmatrix_temp.txt
         #./binn/overlappingmatrix.exe "$mypath"/datasets/ground_thruth_csv/"$p".csv dummyatompairs_temp.txt  "$ngc" "$nmc" >> "$mypath"/temp/overlappingmatrix_temp.txt
-        python3 binn/overlappingmatrix.py "$mypath"/datasets/ground_thruth_csv/"$p".csv dummyatompairs.txt  "$ngc" "$nmc" > "$mypath"/temp/overlappingmatrix_temp.txt
+        python3 bin/overlappingmatrix.py "$mypath"/datasets/ground_thruth_csv/"$p".csv dummyatompairs.txt  "$ngc" "$nmc" > "$mypath"/temp/overlappingmatrix_temp.txt
 
         	# store overlapping matrix of protein $p for the method $m
         mv "$mypath"/temp/overlappingmatrix_temp.txt  "$mypath"/results/overlapping_matrices/"$p"_"$m"_overlappingmatrix.txt
@@ -126,7 +126,7 @@ do
 			# Compute TP (true positives), FP (false positives), and FN (false negatives)
         	# This computation is performed using the executable program
         	# called tp_fp_fn.exe whose source code is also in the folder /bin
-        python3 binn/fp_tp.py "$mypath"/results/overlapping_matrices/"$p"_"$m"_overlappingmatrix.txt "$ngc" "$nmc" > "$mypath"/temp/tp_fp_fn_temp.txt
+        python3 bin/fp_tp.py "$mypath"/results/overlapping_matrices/"$p"_"$m"_overlappingmatrix.txt "$ngc" "$nmc" > "$mypath"/temp/tp_fp_fn_temp.txt
         	# Remove file no longer necessary
        #rm -r -f dummyatompairs.txt
        echo "tp_fp_fn Done"
