@@ -119,7 +119,7 @@ do
         	# This computation is performed using the executable program
         	# called overlappingmatrix.exe whose source code is also in the folder /bin
 		# >> $mypath/temp/overlappingmatrix_temp.txt
-        ./bin/overlappingmatrix.exe "$mypath"/datasets/ground_thruth_csv/"$p".csv dummyatompairs.txt  "$ngc" "$nmc" > "$mypath"/temp/overlappingmatrix_temp.txt
+        ./bin/overlapping_matrix.exe "$mypath"/datasets/ground_thruth_csv/"$p".csv dummyatompairs.txt  "$ngc" "$nmc" > "$mypath"/temp/overlappingmatrix_temp.txt
         #python3 binn/overlappingmatri.py "$mypath"/datasets/ground_thruth_csv/"$p".csv dummyatompairs_temp.txt  "$ngc" "$nmc" >> "$mypath"/temp/overlappingmatrix_temp.txt
 
         	# store overlapping matrix of protein $p for the method $m
