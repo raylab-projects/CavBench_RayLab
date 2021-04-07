@@ -1,4 +1,0 @@
-fpocket
-gaussian
-ghecom
-kvfinder
