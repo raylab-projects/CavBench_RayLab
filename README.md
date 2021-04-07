@@ -1,5 +1,5 @@
 # CavBench_RayLab
-CavBench is a generic benchmarking tool to compare different protein cavity detection methods developed by Sérgio Dias et al (https://github.com/mosqueteer/CavBench).  
+CavBench is a generic benchmarking tool to compare different protein cavity detection methods developed by Sérgio Dias et al. (https://github.com/mosqueteer/CavBench)  
 This is a workable version of the same tool.
 
 To run CavBench based on C++, access the "c++" folder.  
