@@ -1,6 +1,6 @@
 
 # How to run?
-In the shell file assign the value of "gt" variable as "mole" or "ciclop" depending on what you want to take as the ground truth.
+In the shell file assign the value of "gt" variable (line 39) as "mole" or "ciclop" depending on what you want to take as the ground truth.
 
 In the shell command line, just type:
 
