@@ -90,9 +90,9 @@ do
         ngc=$((ngc+1))
 
         	# number of cavities identified by the method $m for the protein $p
-	nmc=$(sort -s -n -k 4,4 "$mypath"/datasets/"$gt"_gt_csv/"$p".csv |tail -n 1  | awk '{print $(NF-1)}') 
-        nmc=$((nmc+1))
-        echo $ngc
+	nmc=$(sort -s -n -k 4,4 "$mypath"/datasets/"$m"_csv/"$p".csv |tail -n 1  | awk '{print $NF}')
+    nmc=$((nmc+1))
+    echo $ngc
 	echo $nmc
 	echo $p
 	echo $m
