@@ -247,7 +247,7 @@ fpocket_apo=$(head -1 "$mypath"/results/csv/TPFPFN_apo.txt | tail -1 | awk '{pri
 gaussian_apo=$(head -2 "$mypath"/results/csv/TPFPFN_apo.txt | tail -1 | awk '{printf ("\tGaussian\t%d\t%d\t%d\t%d\t\t%0.4f\t%0.4f\t%0.4f\n",$1,$2,$3,$4,$2/($2+$3),$2/($2+$4),2*$2/((2*$2)+$3+$4))}')
 ghecom_apo=$(head -3 "$mypath"/results/csv/TPFPFN_apo.txt | tail -1 | awk '{printf ("\tGhecom\t%d\t%d\t%d\t%d\t\t%0.4f\t%0.4f\t%0.4f\n",$1,$2,$3,$4,$2/($2+$3),$2/($2+$4),2*$2/((2*$2)+$3+$4))}')
 kvfinder_apo=$(head -4 "$mypath"/results/csv/TPFPFN_apo.txt | tail -1 | awk '{printf ("\tKvfinder\t%d\t%d\t%d\t%d\t\t%0.4f\t%0.4f\t%0.4f\n",$1,$2,$3,$4,$2/($2+$3),$2/($2+$4),2*$2/((2*$2)+$3+$4))}')
-printf "\t\t\tAPOs\n" >> "$mypath"/results/csv/results.csv
+printf "\t\t\tHOLOs\n" >> "$mypath"/results/csv/results.csv
 printf "\t\t#Cavities\tTP\tFP\tFN\t\tPrecision\tRecall\tFscore\n" >> "$mypath"/results/csv/results.csv
 echo "$fpocket_apo" >> "$mypath"/results/csv/results.csv
 echo "$gaussian_apo" >> "$mypath"/results/csv/results.csv
@@ -264,7 +264,7 @@ fpocket_holo=$(head -1 "$mypath"/results/csv/TPFPFN_holo.txt | tail -1 | awk '{p
 gaussian_holo=$(head -2 "$mypath"/results/csv/TPFPFN_holo.txt | tail -1 | awk '{printf ("\tGaussian\t%d\t%d\t%d\t%d\t\t%0.4f\t%0.4f\t%0.4f\n",$1,$2,$3,$4,$2/($2+$3),$2/($2+$4),2*$2/((2*$2)+$3+$4))}')
 ghecom_holo=$(head -3 "$mypath"/results/csv/TPFPFN_holo.txt | tail -1 | awk '{printf ("\tGhecom\t%d\t%d\t%d\t%d\t\t%0.4f\t%0.4f\t%0.4f\n",$1,$2,$3,$4,$2/($2+$3),$2/($2+$4),2*$2/((2*$2)+$3+$4))}')
 kvfinder_holo=$(head -4 "$mypath"/results/csv/TPFPFN_holo.txt | tail -1 | awk '{printf ("\tKvfinder\t%d\t%d\t%d\t%d\t\t%0.4f\t%0.4f\t%0.4f\n",$1,$2,$3,$4,$2/($2+$3),$2/($2+$4),2*$2/((2*$2)+$3+$4))}')
-printf "\t\t\tHOLOs\n" >> "$mypath"/results/csv/results.csv
+printf "\t\t\tAPOs\n" >> "$mypath"/results/csv/results.csv
 printf "\t\t#Cavities\tTP\tFP\tFN\t\tPrecision\tRecall\tFscore\n" >> "$mypath"/results/csv/results.csv
 echo "$fpocket_holo" >> "$mypath"/results/csv/results.csv
 echo "$gaussian_holo" >> "$mypath"/results/csv/results.csv
