@@ -1,3 +1,4 @@
+In the shell file "cavbench_p.sh" assign the value of "gt" variable (line 36) as "mole" or "ciclop" depending on what you want to take as the ground truth.
 
 # How to run?
 In the shell command line, just type:
